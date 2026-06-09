@@ -1,0 +1,492 @@
+@charset "UTF-8";
+
+/* ================= GENERAL STYLING ================= */
+/* Applies base styling to the entire page */
+body {
+	margin: 0; /* Removes default browser margin */
+	font-family: Arial; /* Sets default font */
+	background: #f5f5f5; /* Light grey background */
+}
+
+/* ================= NAVBAR ================= */
+nav {
+	display: flex; /* Uses flexbox for layout */
+	flex-direction: column; /* Stacks elements vertically */
+	align-items: center; /* Centers items horizontally */
+	padding: 20px;
+	background: linear-gradient(to right, #d4af37, #ffffff);
+	/* Gold to white gradient */
+}
+
+/* Website logo/title styling */
+.logo {
+	font-size: 32px;
+	font-family: "Brush Script MT", cursive; /* Decorative font */
+	color: black;
+	margin: 0 0 10px 0;
+}
+
+/* Container for navigation links */
+nav div {
+	display: flex;
+	gap: 25px; /* Space between links */
+}
+
+/* Navigation links */
+nav a {
+	color: black;
+	text-decoration: none; /* Removes underline */
+	font-weight: bold;
+	padding: 5px 10px;
+	transition: 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for nav links */
+nav a:hover {
+	background: #d4af37;
+	color: white;
+	border-radius: 5px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+	height: 300px;
+	background: url("Images/MANTION.jpg") center/cover;
+	/* Background image */
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Vertical centering */
+	align-items: center; /* Horizontal centering */
+	text-align: center;
+	background-blend-mode: darken; /* Blends overlay with image */
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Dark overlay for readability */
+}
+
+/* Hero title */
+.hero h2 {
+	font-size: 36px;
+	margin: 0;
+}
+
+/* Hero subtitle */
+.hero p {
+	font-size: 18px;
+}
+
+/* ================= PROPERTIES SECTION ================= */
+.properties {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+	gap: 40px;
+	padding: 50px;
+}
+
+/* ================= PROPERTY CARDS ================= */
+.card {
+	background: white;
+	padding: 15px;
+	width: 300px;
+	border-radius: 12px;
+	text-align: center;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Hover animation for cards */
+.card:hover {
+	transform: translateY(-8px); /* Slight lift effect */
+}
+
+/* Card image styling */
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover; /* Prevents image distortion */
+	border-radius: 10px;
+}
+
+/* Card title */
+.card h3 {
+	font-family: "Georgia", serif;
+}
+
+/* Price styling */
+.price {
+	font-weight: bold;
+	color: #d4af37; /* Gold color */
+	font-size: 18px;
+}
+
+/* ================= BUTTONS ================= */
+/* Property "View Details" button */
+.card a {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 10px 15px;
+	background: #d4af37;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+/* Hover effect for buttons */
+.card a:hover {
+	background: black;
+}
+
+/* ================= PROPERTY PAGE LAYOUT ================= */
+.property-container {
+	display: flex;
+	gap: 40px;
+	align-items: flex-start;
+}
+
+/* Left and right sections */
+.property-left {
+	flex: 1;
+}
+
+.property-right {
+	flex: 1;
+}
+
+/* Property title */
+.property-right h2 {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+/* Property description */
+.property-right p {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+/* ================= IMAGE SLIDER ================= */
+.main-img {
+	width: 100%;
+	max-width: 1000px;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+/* Wrapper for positioning navigation buttons */
+.image-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+/* Navigation buttons (left/right arrows) */
+.nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%); /* Centers vertically */
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	font-size: 28px;
+	padding: 10px 15px;
+	cursor: pointer;
+	opacity: 0; /* Hidden by default */
+	transition: 0.3s;
+}
+
+/* Left button positioning */
+.nav.left {
+	left: 10px;
+}
+
+/* Right button positioning */
+.nav.right {
+	right: 10px;
+}
+
+/* Show buttons on hover */
+.image-wrapper:hover .nav {
+	opacity: 1;
+}
+
+/* Hover effect for navigation buttons */
+.nav:hover {
+	background: #d4af37;
+}
+
+/* ================= TEXT & LISTS ================= */
+.score {
+	font-size: 20px;
+	font-weight: bold;
+	color: #d4af37
+}
+
+ul {
+	text-align: left;
+	max-width: 500px;
+}
+
+ul li {
+	margin-bottom: 8px;
+}
+
+.external {
+	margin-top: 10px;
+	font-style: italic;
+	color: #555;
+}
+
+/* ================= WELCOME MESSAGE ================= */
+.welcome {
+	text-align: center;
+	font-size: 24px;
+	margin: 25px 0;
+	font-weight: bold;
+	color: #333;
+}
+
+/* ================= FORMS ================= */
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+}
+
+form {
+	background: white;
+	padding: 50px;
+	border-radius: 15px;
+	width: 400px;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	text-align: center;
+}
+
+/* Input fields */
+input {
+	width: 100%;
+	padding: 12px;
+	margin-top: 12px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 16px
+}
+
+/* General button styling */
+button {
+	margin-top: 15px;
+	padding: 10px 15px;
+	background: #d4af37;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+	color: black;
+}
+
+/* Logout button styling */
+.logout {
+	color: red;
+	font-weight: bold;
+}
+
+.logout:hover {
+	background: red;
+	color: white;
+}
+
+/* ================= MUSIC BUTTON ================= */
+.music-btn {
+	position: fixed; /* Fixed to screen */
+	bottom: 20px;
+	right: 20px;
+	padding: 12px 18px;
+	background: #d4af37;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: bold;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+/* NOTE: Typo here (.music-btm instead of .music-btn) */
+.music-btm:hover {
+	background: black;
+}
+
+/* ================= DELETE BUTTON ================= */
+.delete-btn {
+	background: none;
+	border: none;
+	color: #ff4d4d;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.delete-btn:hover {
+	color: red;
+	transform: scale(1.2);
+}
+
+/* ================= FULLSCREEN IMAGE ================= */
+.fullscreen {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+.fullscreen-img {
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 12px;
+}
+
+.close-btn {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+.fullscreen:hover .nav {
+	opacity: 1
+}
+/* ================= FOOTER ================= */
+.footer {
+	background: linear-gradient(to right, #d4af37, #000);
+	color: white;
+	text-align: center;
+	padding: 15px 10px;
+	margin-top: 50px;
+	font-size: 14px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+/* Adjust layout for smaller screens */
+@media ( max-width : 768px) {
+	.properties {
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+	}
+	.card {
+		width: 90; /* NOTE: Missing unit (should be %) */
+	}
+}
+
+.property-box {
+	background: white;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.overview-container {
+	display: flex;
+	justify-content: center; /* center the whole section */
+	align-items: center; /* vertical alignment */
+	gap: 60px; /* more spacing like your screenshot */
+	max-width: 1100px;
+	margin: 50px auto; /* pushes it down nicely */
+}
+
+.overview-left, .overview-right {
+	flex: 1;
+}
+
+.overview-left.card {
+	padding: 35px;
+	border-radius: 18px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+	text-align: center;
+}
+
+.overview-img {
+	width: 100%;
+	max-width: 420px;
+	border-radius: 20px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+	display: block;
+	margin: auto; /* centers it nicely */
+}
+
+.overview-left h2, .overview-left h3 {
+	text-align: center;
+}
+
+.overview-left p {
+	text-align: center;
+}
+
+body {
+	background: linear-gradient(to right, #f5f5f5, #eaeaea);
+}
+
+.guest-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: gray;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.guest-btn:hover {
+	background-color: darkgray;
+}
+
+.review {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.delete-btn {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 14px;
+    line-height: 1;   
+    
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: red;
+}

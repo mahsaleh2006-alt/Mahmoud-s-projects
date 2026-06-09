@@ -1,0 +1,38 @@
+[
+    {
+        "property_id": 1,
+        "user": "alex_r",
+        "text": "Great location but the interior feels a bit outdated for the price.",
+        "rating": 6
+    },
+    {
+        "property_id": 1,
+        "user": "sara_m",
+        "text": "Nice views and spacious rooms, but not the best value.",
+        "rating": 7
+    },
+    {
+        "property_id": 2,
+        "user": "hassan_k",
+        "text": "Beautiful villa with excellent space and privacy.",
+        "rating": 9
+    },
+    {
+        "property_id": 2,
+        "user": "lina_q",
+        "text": "Very high quality but slightly overpriced in my opinion.",
+        "rating": 8
+    },
+    {
+        "property_id": 3,
+        "user": "daniel_t",
+        "text": "Absolutely amazing property, one of the best I've seen.",
+        "rating": 10
+    },
+    {
+        "property_id": 3,
+        "user": "mariam_s",
+        "text": "Luxury finish and great location, but quite expensive.",
+        "rating": 9
+    }
+]
